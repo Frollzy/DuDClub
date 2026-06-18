@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Начальная станица </title>
     <link rel="stylesheet" href="CSS.css" />
     <script src="path/to/JS.js"></script>
@@ -18,29 +19,29 @@
 
                     <button id="ShowImagePC">
                         <div class="pc">
-                            <img src="img/pc.png" alt="" width="80px" heigth="80px" />
+                            <img src="img/pc.png" alt="" width="120px" height="70px" />
                             <p>ПК</p>
                         </div>
                     </button>
 
                     <button id="ShowImageTc">
                         <div class="trashcan">
-                            <img src="img/trashcan.png" alt="" width="45px" heigth="45px" />
+                            <img src="img/trashcan.png" alt="" width="65px" height="70px" />
                             <p>ДОТА2</p>
                         </div>
                     </button>
 
                     <button id="ShowImageImg">
                         <div class="img">
-                            <img src="img/img.png" alt="" width="110px" heigth="110px" />
+                            <img src="img/img.png" alt="" width="160px" height="90px" />
                             <p>ФОТО</p>
                         </div>
                     </button>
 
                     <button id="ShowImageVd">
                         <div class="video">
-                            <img src="img/video.png" alt="" width="170px" heigth="170px" />
-                            <p>ФОТО</p>
+                            <img src="img/video.png" alt="" width="230px" height="80px" />
+                            <p>ВИДЕО</p>
                         </div>
                     </button>
 
@@ -50,40 +51,11 @@
                         </div>
 
 
-</div>
+                </div>
 
             </div>
         </div>
 
-        <script>
-            document.getElementById('ShowImagePC').addEventListener('click', function () {
-                var image = document.getElementById('display-pc');
-                if (image.style.display === 'none') {
-                    image.style.display = 'block';
-                } else {
-                    image.style.display = 'none';
-                }
-            });
-
-                document.getElementById('ShowImageTc').addEventListener('click', function () {
-                var image = document.getElementById('display-trashcan');
-                if (image.style.display === 'none') {
-                    image.style.display = 'block';
-                } else {
-                    image.style.display = 'none';
-                }
-                }); 
-
-            document.getElementById('ShowImageImg').addEventListener('click', function () {
-                var image = document.getElementById('display-img');
-                window.location.href = 'img-window.html';
-            });
-
-            document.getElementById('ShowImageVd').addEventListener('click', function () {
-                var image = document.getElementById('display-video');
-                window.location.href = 'video-window.html';
-            });
-
-        </script>
+        <script src="script.js"></script>
 </body>
 </html>
