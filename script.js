@@ -7,7 +7,7 @@ function handleLogin() {
     if (username === '8==D' && password === 'pass') {
         messageDiv.style.color = 'green';
         messageDiv.textContent = 'Успешный вход!';
-        window.location.href = 'index.html';
+        window.location.href = 'main.html';
 
     } else {
         messageDiv.style.color = 'red';
