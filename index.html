@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Начальная станица </title>
+    <link rel="stylesheet" href="CSS.css" />
+    <script src="path/to/JS.js"></script>
+</head>
+
+<body style="background-image: url('img/oboi-index.png')">
+
+        <div id="wrapper">
+            <div id="header">
+
+                <div class="container">
+
+
+                    <button id="ShowImagePC">
+                        <div class="pc">
+                            <img src="img/pc.png" alt="" width="80px" heigth="80px" />
+                            <p>ПК</p>
+                        </div>
+                    </button>
+
+                    <button id="ShowImageTc">
+                        <div class="trashcan">
+                            <img src="img/trashcan.png" alt="" width="45px" heigth="45px" />
+                            <p>ДОТА2</p>
+                        </div>
+                    </button>
+
+                    <button id="ShowImageImg">
+                        <div class="img">
+                            <img src="img/img.png" alt="" width="110px" heigth="110px" />
+                            <p>ФОТО</p>
+                        </div>
+                    </button>
+
+                    <button id="ShowImageVd">
+                        <div class="video">
+                            <img src="img/video.png" alt="" width="170px" heigth="170px" />
+                            <p>ФОТО</p>
+                        </div>
+                    </button>
+
+                        <div class="window">
+                            <img id="display-pc" src="img/pc-window.png" style="display: none" />
+                            <img id="display-trashcan" src="img/trashcan-window.png" style="display: none" />
+                        </div>
+
+
+</div>
+
+            </div>
+        </div>
+
+        <script>
+            document.getElementById('ShowImagePC').addEventListener('click', function () {
+                var image = document.getElementById('display-pc');
+                if (image.style.display === 'none') {
+                    image.style.display = 'block';
+                } else {
+                    image.style.display = 'none';
+                }
+            });
+
+                document.getElementById('ShowImageTc').addEventListener('click', function () {
+                var image = document.getElementById('display-trashcan');
+                if (image.style.display === 'none') {
+                    image.style.display = 'block';
+                } else {
+                    image.style.display = 'none';
+                }
+                }); 
+
+            document.getElementById('ShowImageImg').addEventListener('click', function () {
+                var image = document.getElementById('display-img');
+                window.location.href = 'img-window.html';
+            });
+
+            document.getElementById('ShowImageVd').addEventListener('click', function () {
+                var image = document.getElementById('display-video');
+                window.location.href = 'video-window.html';
+            });
+
+        </script>
+</body>
+</html>
