@@ -11,6 +11,11 @@
             background-attachment: fixed;
         }
 
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
         .login-container {
             padding: 30px;
             border-radius: 8px;
@@ -18,11 +23,6 @@
             width: 300px;
             position: fixed;
             bottom: 35%;
-        }
-
-        h2 {
-            text-align: center;
-            margin-bottom: 20px;
         }
 
         label {
@@ -88,45 +88,25 @@
 </head>
 <body>
 
-        <div class="login-container">
-            <h2>Авторизация</h2>
+    <div class="login-container">
+        <h2>Авторизация</h2>
 
-            <form id="loginForm" onsubmit="return handleLogin()">
-                <label for="username">Имя пользователя:</label>
-                <input type="text" id="username" name="username" required />
+        <form id="loginForm" onsubmit="return handleLogin()">
+            <label for="username">Имя пользователя:</label>
+            <input type="text" id="username" name="username" required />
 
-                <label for="password">Пароль:</label>
-                <input type="password" id="password" name="password" required />
+            <label for="password">Пароль:</label>
+            <input type="password" id="password" name="password" required />
 
-                <button type="submit">Войти</button>
-                <div class="message" id="message"></div>
-            </form>
+            <button type="submit">Войти</button>
+            <div class="message" id="message"></div>
+        </form>
 
-        </div>
-        <div class="fog">
-        </div>
+    </div>
 
+    <div class="fog"></div>
 
-        <script>
-            function handleLogin() {
-                const username = document.getElementById('username').value;
-                const password = document.getElementById('password').value;
-                const messageDiv = document.getElementById('message');
-
-
-                if (username === '8==D' && password === 'pass') {
-                    messageDiv.style.color = 'green';
-                    messageDiv.textContent = 'Успешный вход!';
-                    window.location.href = 'index.html';
-
-                } else {
-                    messageDiv.style.color = 'red';
-                    messageDiv.textContent = 'Неверное имя пользователя или пароль.';
-                }
-
-                return false;
-            }
-        </script>
+    <script src="script.js"></script>
 
 </body>
 </html>
