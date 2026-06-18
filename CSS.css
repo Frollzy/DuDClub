@@ -39,33 +39,47 @@ p {
     position: fixed;
     bottom: 82%;
     left: 0.7%;
+    max-width: 120px;
+    height: auto;
 }
 
 .trashcan {
     position: fixed;
     bottom: 82%;
     left: 10%;
+    max-width: 65px;
+    height: auto;
 }
 
 .img {
     position: fixed;
     bottom: 64%;
     left: 0%;
+    max-width: 160px;
+    height: auto;
 }
 
 .video {
     position: fixed;
     bottom: 64%;
     left: 4.5%;
+    max-width: 230px;
+    height: auto;
 }
 
 .window {
     position: fixed;
     bottom: 20%;
     left: 30%;
+    display: flex;
+    max-width: 80%;
 }
 
-@media (max-width: 600px) {
+button {
+    cursor: pointer;
+}
+
+@media (max-width: 350px) {
     .container {
         flex-direction: column;
     }
